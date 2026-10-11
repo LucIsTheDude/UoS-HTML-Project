@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>UoSGoodFood</title>
+    <meta name="author" content="Luc Smith">
+
+    <!-- Setting the meta viewport tag, to ensure accurate scaling -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- Setting the tab icon -->
+    <link rel="icon" type="image/x-icon" href="images/logo.ico">
+
+    <!-- Linking my CSS files -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <!-- I am using a wrapper to make sure my webiste can have a min/max width -->
+    <div id="wrapper">
+        <header>
+            <img id="logo" src="images/UoSGoodFood.png" alt="UoSGoodFood logo">
+        </header>
+ 
+        <nav>
+            <ul>
+                <li id="home" class="active"><a href="index.html">Home</a></li>
+                <li><a href="food_and_drink.html">Food and Drink</a></li>
+                <li><a href="picnic_locations.html">Picnic Locations</a></li>
+                <li id="quiz"><a href="quiz.html">Quiz</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <h1>Welcome to UoSGoodFood!</h1>
+            <!-- I have wrapped the content of every page with a div to ensure 
+            there is enough spacing between the content and the footer of the page -->
+            <div id="content">
+                <figure>
+                    <!-- This picture element has two images used, one for mobile, and one for desktops. 
+                    This is used to balance loading time and image quality dpeending on how big the screen resolution is -->
+                    <picture>
+                        <source srcset="images/UoS-desktop.jpg" media="(min-width: 650px)">
+                        <img src="images/UoS-mobile.jpg" alt="An image of the Sheffield Student's Union">
+                    </picture>
+                    <figcaption>The UoS Student's Union</figcaption>
+                </figure>
+                <p>Hello there! I'm Luc and this is UoSGoodFood! The leading experts on all things food at Sheffield!</p>
+                <p>This website is intended for anyone who wants to find the best places in Sheffield to find food & drink, or places to have a picnic. There is also a fun, interactive little quiz page too! Keep in mind, all these 'best' spots listed are my own opinions, so take all praise given with a grain of salt. Although, I am hopeful you agree! Have a look around, and see what Sheffield really has to offer!</p>
+            </div>
+        </main>
+
+        <footer>
+            <ul>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="design.html">Design</a></li>
+                <li><a href="testing.html">Testing</a></li>
+                <li><a href="accessibility.html">Accessibility</a></li>
+                <li><a href="legal_and_security.html">Legal and Security</a></li>
+            </ul>
+            <p>&copy; Luc Smith, 2024</p>
+        </footer>
+    </div>
+</body>
+
+</html>

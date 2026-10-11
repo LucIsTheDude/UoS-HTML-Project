@@ -1,0 +1,137 @@
+/*
+This is the CSS file for the pages in the header nav bar.
+This has been developed mobile-first.
+Written by Luc Smith
+*/
+
+
+
+
+
+/* Main elements */
+h1 {
+    margin-top: 7%;
+    margin-bottom: 0;
+}
+
+
+
+
+
+/* Content elements */
+main figure {
+    /* General styling of the location information boxes */
+    width: 300px;
+    margin: 3% auto;
+    padding: 3%;
+    background-color: lightgrey;
+    border-radius: 10px;
+}
+
+main p {
+    margin: 2%;
+}
+
+main h2 {
+    font-size: larger;
+    text-align: center;
+    color: midnightblue;
+    margin-top: 2%;
+    margin-bottom: 4%;
+}
+
+main h4 {
+    text-align: center;
+    margin: 4%;
+}
+
+main img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+main iframe {
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+main figure a {
+    /* creating a stylish button for a link to the maps location */
+    background-color: rgb(140, 180, 50);
+    padding: 2%;
+    margin: 8%;
+    text-decoration: none;
+    color: white;
+    display: block;
+    text-align: center;
+    border-radius: 50px;
+    box-shadow: 5px 5px 5px rgb(100,100,100);
+}
+
+main figure a:hover {
+    /* Making the button change colour slightly when being hovered over, 
+    to give it a nice-looking interactive effect */
+    background-color: rgb(100, 140, 30);
+}
+
+.answer {
+    background-color: dimgray;
+    color: dimgray;
+    font-size: x-large;
+    padding: 6%;
+    width: fit-content;
+    margin: 0 auto;
+    
+    /* Makes the changes that happen when the element is hovered over, 
+    as seen below, change gradually, making it much more interesting */
+    transition: all 0.5s ease;
+}
+
+.answer:hover {
+    background-color: rgb(140, 180, 50);
+    color: white;
+    padding: 12%;
+}
+
+
+
+
+
+/* Specific element styling using IDs */
+#content {
+    width: 95%;
+    margin: 0 auto;
+    margin-top: 3%;
+    margin-bottom: 3.5%;
+
+    /* I am using a flex box to make the locations wrap 
+    depending on the viewport width */
+    display: flex;
+    flex-flow: row wrap;
+    gap: 10px; /* Makes sure the items wrap before they touch, 
+    so it never looks weird */
+}
+
+
+
+
+
+/* Media qureies to scale up the website for desktop usage */
+@media screen and (min-width: 650px) {
+    h1 {
+        margin-top: 3%;
+        margin-bottom: 1%;
+    }
+    
+    main h2 {
+        font-size: x-large;
+        margin-top: 0;
+        margin-bottom: 9%;
+    }
+    
+    #content {
+        margin-top: 0;
+        margin-bottom: 0.5%;
+    }
+}

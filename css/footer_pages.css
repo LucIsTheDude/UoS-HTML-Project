@@ -1,0 +1,87 @@
+/*
+This is the CSS file for the pages in the footer nav bar.
+This has been developed mobile-first.
+Written by Luc Smith
+*/
+
+
+
+
+
+/* Content elements */
+main h4 {
+    font-size: large;
+    text-align: center;
+    margin: 0;
+}
+
+main section {
+    margin-top: 10%;
+}
+
+main span {
+    /* This prevents the attributes being talked about in 'Security' 
+    from getting split up by word wrapping (makes it look weird) */
+    white-space: nowrap;
+}
+
+main figure {
+    margin: 5%;
+    text-align: center;
+}
+
+main img {
+    width: 85%;
+}
+
+main figure#mockups img {
+    /* Specific image styling to make them be side-by-side on desktop */
+    display: inline-block;
+    margin: 2%;
+    width: 60%;
+}
+
+
+main figure#mockups img#desktop {
+    width: 95%;
+}
+
+#first {
+    margin-top: 8%;
+}
+
+
+
+
+
+/* Media qureies to scale up the website for desktop usage */
+@media screen and (min-width: 650px) {
+    main section {
+        margin-top: 5%;
+    }
+
+    main h4 {
+        font-size: larger;
+    }
+
+    main figure {
+        margin: 2%;
+    }
+
+    main img {
+        width: 75%;
+    }
+
+    main figure#mockups img {
+        margin: 1%;
+        width: 25%;
+    }
+    
+    main figure#mockups img#desktop {
+        width: 67%;
+    }
+    
+    #first {
+        margin-top: 4%;
+    }
+}

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>UoSGoodFood</title>
+    <meta name="author" content="Luc Smith">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="images/logo.ico">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/footer_pages.css">
+</head>
+
+<body>
+    <div id="wrapper">
+        <header>
+            <img id="logo" src="images/UoSGoodFood.png" alt="UoSGoodFood logo">
+        </header>
+ 
+        <nav>
+            <ul>
+                <li id="home"><a href="index.html">Home</a></li>
+                <li><a href="food_and_drink.html">Food and Drink</a></li>
+                <li><a href="picnic_locations.html">Picnic Locations</a></li>
+                <li id="quiz"><a href="quiz.html">Quiz</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <h1>Design</h1>
+            <div id="content">
+                <!-- I used the section semantic element to allow me 
+                to easily format the elements -->
+                <p>This page shows the design process I went through before developing my website.</p>
+                <section>
+                    <h4><u>Introduction</u></h4>
+                    <p>My initial idea for the website is for it to be cheerful and welcoming to any visitors, as the aim of the website to inform and guide people on the best places to get food & drinks, have a picnic, and to take a fun, interactive quiz. This means I will be creating a clean and attractive website with interesting elements, which should make the users more engaged.</p>
+                </section>
+                <section>
+                    <h4><u>Site Map</u></h4>
+                    <p>This website is an information page and is simple in essence, so only has two levels of pages. All the links to each page are on every single page as there aren't many.</p>
+                    <figure>
+                        <img src="images/sitemap.png" alt="A sitemap of the UoSGoodFood website">
+                        <figcaption>A sitemap of the UoSGoodFood website</figcaption>
+                    </figure>
+                </section>
+                <section>
+                    <h4><u>Design Mock-Ups</u></h4>
+                    <figure id="mockups">
+                        <img src="images/mockup-mobile.png" alt="A mobile mockup of the UoSGoodFood website">
+                        <img id="desktop" src="images/mockup-desktop.png" alt="A desktop mockup of the UoSGoodFood website">
+                    </figure>
+                    <p>These are the mock-ups for my website design, made using Canva. I went for a sleek design that’s simplistic but also aesthetically pleasing. I made sure to use the same colours in the logo as the main colours for the website’s elements, such as the lighter green for a selected element and the darker green for when you are hovering over an element to select. I have also tried to make sure the shade of grey for the paragraph background isn’t too dark so there is good enough contrast in relation to accessibility as well.</p>
+                    <p>I have only created one design mock-up for mobile and desktop as each page design will look almost the same, just with different content. I have the main idea down, so I can get started on the actual programming of this design.</p>
+                    <p>I intend to use a flexbox for my nav bar, so at a specific breakpoint (e.g. > 500px width), the flex layout will change from a column to a row. I may also use a few tweak points here and there to try and keep a consistent-looking page as the viewport width increases/decreases, for example, I will set a maximum width for the wrapper element to prevent the website content from being stretched out too far. This is demonstrated in the desktop design mock-up, since the sides of the website actually stop at a specific point (e.g. 1000px).</p>
+                    <p>Of course, since this is Mobile-First Responsive Web Design, I will first be designing each page on the dimensions of a phone screen, then using media queries to scale any of the elements appropriately. This will make sure I have a consistent design that looks good on both mobile and desktop (or anything in between).</p>
+                </section>
+                <section>
+                    <h4><u>Menu System</u></h4>
+                    <p>As described in the design mock-ups section; I will use a flexbox for my nav bar. This means I can have the nav bar be a column on mobile but a row on desktop, this is known has a 'responsive nav bar' menu system in the HTML/CSS world. I chose to do this as I only need to have 4 links for navigation at the top, any more and I would consider a 'burger-style' drop-down menu to be more appropriate.</p>
+                </section>
+            </div>
+        </main>
+
+        <footer>
+            <ul>
+                <li><a href="contact.html">Contact</a></li>
+                <li class="active"><a href="design.html">Design</a></li>
+                <li><a href="testing.html">Testing</a></li>
+                <li><a href="accessibility.html">Accessibility</a></li>
+                <li><a href="legal_and_security.html">Legal and Security</a></li>
+            </ul>
+            <p>&copy; Luc Smith, 2024</p>
+        </footer>
+    </div>
+</body>
+
+</html>

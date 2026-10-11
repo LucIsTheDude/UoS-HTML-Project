@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>UoSGoodFood</title>
+    <meta name="author" content="Luc Smith">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="images/logo.ico">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/header_pages.css">
+</head>
+
+<body>
+    <div id="wrapper">
+        <header>
+            <img id="logo" src="images/UoSGoodFood.png" alt="UoSGoodFood logo">
+        </header>
+ 
+        <nav>
+            <ul>
+                <li id="home"><a href="index.html">Home</a></li>
+                <li><a href="food_and_drink.html">Food and Drink</a></li>
+                <li class="active"><a href="picnic_locations.html">Picnic Locations</a></li>
+                <li id="quiz"><a href="quiz.html">Quiz</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <h1>Picnic Locations</h1>
+            <div id="content">
+                <!-- I have used the 'figure' semantic element for each location 
+                as it means I can wrap all the information into one element, 
+                which allows for easy formatting -->
+                <figure>
+                    <h2>Endcliffe Park</h2>
+                    <img src="images/endcliffe-park.jpg" alt="Scenery at endcliffe park">
+                    <p>Comprising parkland and woodland, it is the first in a series of parks and green spaces, known collectively as Porter Valley Parks, all of which lie along the course of the Porter Brook River. Located just below Endcliffe Village, it is the perfect place for any students wanting a break.</p>
+                    <h4>Location:</h4>
+                    <!-- These 'iframe' elements are able to be created directly within google map's 
+                    'share' option to allow the embedding of maps directly into the HTML -->
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2380.586044512102!2d-1.5116292232670463!3d53.36856297229562!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4879826dc2eba957%3A0x7cf76688125bc498!2sEndcliffe%20Park!5e0!3m2!1sen!2suk!4v1731440469714!5m2!1sen!2suk" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <!-- Link to the location, opens in a new tab -->
+                    <a href="https://maps.app.goo.gl/hU5pG2T5zL12nmsr9" target="_blank" rel="noopener noreferrer"><b>Link to the Location</b></a>
+                </figure>
+                <figure>
+                    <h2>The Botanical Gardens</h2>
+                    <img src="images/botanical-gardens.jpg" alt="Scenery at the botanical gardens">
+                    <p>Situated close to the urban city centre, the Botanical Gardens were opened in 1836 and now cover 19 acres on a south-west sloping site. This gem is near Endcliffe Village, but also on most people's way back from town, so is a great spot to stop off and relax at, and maybe to enjoy a picnic!</p>
+                    <h4>Location:</h4>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2380.3987364180166!2d-1.4994886744647022!3d53.3719147627921!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487982720050901f%3A0x6edabb0d419de894!2sSheffield%20Botanical%20Gardens!5e0!3m2!1sen!2suk!4v1731441374366!5m2!1sen!2suk" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <a href="https://maps.app.goo.gl/zkfhHaozUvaWvYv86" target="_blank" rel="noopener noreferrer"><b>Link to the Location</b></a>
+                </figure>
+                <figure>
+                    <h2>Weston Park</h2>
+                    <img src="images/weston-park.jpg" alt="Scenery at weston park">
+                    <p>Weston Park is immediately west of the city centre, next to Weston Park Museum. It is also situated next to the University of Sheffield Library, Geography and Firth Court buildings, and across the road from Student's Union. It is one of the three parks in Crookesmoor. Being so close to the University buildings makes it the perfect spot right nearby to unwind after a long day of work.</p>
+                    <h4>Location:</h4>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1189.932023059659!2d-1.4936240108686443!3d53.38148199307487!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4879789d4382afc1%3A0xf8c851a91f5c6618!2sWeston%20Park!5e0!3m2!1sen!2suk!4v1731443013453!5m2!1sen!2suk" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <a href="https://maps.app.goo.gl/cNc1Qhta4bM4TA8T8" target="_blank" rel="noopener noreferrer"><b>Link to the Location</b></a>
+                </figure>
+            </div>
+        </main>
+
+        <footer>
+            <ul>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="design.html">Design</a></li>
+                <li><a href="testing.html">Testing</a></li>
+                <li><a href="accessibility.html">Accessibility</a></li>
+                <li><a href="legal_and_security.html">Legal and Security</a></li>
+            </ul>
+            <p>&copy; Luc Smith, 2024</p>
+        </footer>
+    </div>
+</body>
+
+</html>

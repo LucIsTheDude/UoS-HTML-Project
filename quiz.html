@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>UoSGoodFood</title>
+    <meta name="author" content="Luc Smith">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="images/logo.ico">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/header_pages.css">
+</head>
+
+<body>
+    <div id="wrapper">
+        <header>
+            <img id="logo" src="images/UoSGoodFood.png" alt="UoSGoodFood logo">
+        </header>
+ 
+        <nav>
+            <ul>
+                <li id="home"><a href="index.html">Home</a></li>
+                <li><a href="food_and_drink.html">Food and Drink</a></li>
+                <li><a href="picnic_locations.html">Picnic Locations</a></li>
+                <li id="quiz" class="active"><a href="quiz.html">Quiz</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <h1>Quiz</h1>
+            <div id="content">
+                <!-- I have used the 'figure' semantic element for each question 
+                as it means I can wrap all the information into one element, 
+                which allows for easy formatting -->
+                <figure>
+                    <h2>Question 1</h2>
+                    <img src="images/burrito.jpg" alt="A burrito on display">
+                    <h4>What food spot is known for it's burritos that are to-die-for?</h4>
+                    <br>
+                    <h4><b>Answer (hover):</b></h4>
+                    <!-- This p element will be styled 
+                    so the answer is hidden until hovered over -->
+                    <p class="answer"><b>Grill and Go!</b></p>
+                </figure>
+                <figure>
+                    <h2>Question 2</h2>
+                    <img src="images/porter-brook.jpg" alt="The porter brook river in sheffield">
+                    <h4>What picnic location is part of the 'Porter Valley Parks', that lie along the course of the Porter Brook river?</h4>
+                    <br>
+                    <h4><b>Answer (hover):</b></h4>
+                    <p class="answer"><b>Endcliffe Park!</b></p>
+                </figure>
+                <figure>
+                    <h2>Question 3</h2>
+                    <img src="images/botanical-gardens-quiz.jpg" alt="The sheffield botanical gardens">
+                    <h4>What picnic location opened in 1836?</h4>
+                    <br>
+                    <h4><b>Answer (hover):</b></h4>
+                    <p class="answer"><b>The Botanical Gardens!</b></p>
+                </figure>
+            </div>
+        </main>
+
+        <footer>
+            <ul>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="design.html">Design</a></li>
+                <li><a href="testing.html">Testing</a></li>
+                <li><a href="accessibility.html">Accessibility</a></li>
+                <li><a href="legal_and_security.html">Legal and Security</a></li>
+            </ul>
+            <p>&copy; Luc Smith, 2024</p>
+        </footer>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>UoSGoodFood</title>
+    <meta name="author" content="Luc Smith">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="images/logo.ico">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/footer_pages.css">
+    <link rel="stylesheet" href="css/testing.css">
+</head>
+
+<body>
+    <div id="wrapper">
+        <header>
+            <img id="logo" src="images/UoSGoodFood.png" alt="UoSGoodFood logo">
+        </header>
+ 
+        <nav>
+            <ul>
+                <li id="home"><a href="index.html">Home</a></li>
+                <li><a href="food_and_drink.html">Food and Drink</a></li>
+                <li><a href="picnic_locations.html">Picnic Locations</a></li>
+                <li id="quiz"><a href="quiz.html">Quiz</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <h1>Testing</h1>
+            <div id="content">
+                <!-- I used the section semantic element to allow me 
+                to easily format the elements -->
+                <section id="first">
+                    <h4><u>Optimisation</u></h4>
+                    <p>I made sure to consider page loading times on different types of devices. One way I did this was on the home page, whereby I made the image load a higher quality version on desktop, and a lower quality one on mobile. I did this because, on mobile, the quality difference is unnoticeable, and the lower quality increases the loading time. The loading times are important for a website on mobile as they are slower compared to desktops, using a lower quality image aims to avoid any blocky image loading that can impact the user experience. Similarly, I made sure all the images on the other pages are not too high quality, especially since they are much smaller than the home page image, so higher quality images are unnecessary.</p>
+                </section>
+                <section>
+                    <h4><u>Debugging</u></h4>
+                    <p>I used a HTML and CSS W3C Validation extension, which allowed me to check my code against the W3C standard for writing website code. W3C’s standards prioritise web accessibility, internalization, usage, privacy, and security. Therefore, I can be sure my code is being developed in an appropriate way.</p>
+                    <p>The extension automatically checks my HTML/CSS files whenever I save them and tells me if the files are valid or not.</p>
+                    <figure>
+                        <img class="popup" src="images/html-valid.png" alt="A popup stating that the HTML file checked is valid">
+                        <figcaption>What pops up if my HTML file is valid once I save the file</figcaption>
+                    </figure>
+                    <figure>
+                        <img class="popup" src="images/css-valid.png" alt="A popup stating that the CSS file checked is valid">
+                        <figcaption>What pops up if my CSS file is valid once I save the file</figcaption>
+                    </figure>
+                </section>
+                <section>
+                    <h4><u>Browser Testing</u></h4>
+                    <p>Below are several tests of my website on different browsers and devices.</p>
+                    <figure>
+                        <img src="images/test-firefox.png" alt="The home page of this website on firefox">
+                        <figcaption>The home page of this website on firefox</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/test-edge.png" alt="The home page of this website on the edge browser">
+                        <figcaption>The home page of this website on the edge browser</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/test-chrome.png" alt="The home page of this website on chrome">
+                        <figcaption>The home page of this website on chrome</figcaption>
+                    </figure>
+                    <figure>
+                        <img id="mobile" src="images/test-mobile.PNG" alt="The home page of this website on mobile">
+                        <figcaption>The home page of this website on mobile</figcaption>
+                    </figure>
+                    <p>All these tests demonstrate that my website is consistent across all browsers and devices (that I have at my disposal to test). I think the main reason the website is consistent is because I used a CSS normalise file, which makes sure any default browser styling is overridden and prevents them from causing issues in the page.</p>
+                </section>
+                <section>
+                    <h4><u>Accessibility</u></h4>
+                    <p>I have made sure that my website is as accessible as possible. One way I checked my accessibility was using a contrast checker for different elements in my page, to ensure the text is readable to as wide a range of people as possible.</p>
+                    <figure>
+                        <img class="contrast" src="images/contrast-checker.png" alt="The results from a contrast checker for my paragraph elements">
+                        <figcaption>The results from a contrast checker for my paragraph elements. The website used is linked <a href="https://contrastchecker.com/" target="_blank" rel="noopener noreferrer">here</a></figcaption>
+                    </figure>
+                    <p>Unfortunately, this checker revealed that the contrast of my selected elements was not up to par for accessibility, as seen below.</p>
+                    <figure>
+                        <img class="contrast" src="images/contrast-checker-2.png" alt="The results from a contrast checker for my selected elements">
+                        <figcaption>The results from a contrast checker for my selected elements. The website used is linked <a href="https://contrastchecker.com/" target="_blank" rel="noopener noreferrer">here</a></figcaption>
+                    </figure>
+                    <p>This shows just how helpful it is to check things like this, ensuring that you make your website available to all.</p>
+                    <br> <!-- Line breaks -->
+                    <br>
+                    <p>I also checked how accessible my website is using the <a href="https://wave.webaim.org/" target="_blank" rel="noopener noreferrer">WAVE Web Accessibility Evaluation Tool</a>, the results from my home page are below.</p>
+                    <figure>
+                        <img src="images/wave-results.png" alt="The WAVE results from the home page of this website">
+                        <figcaption>The WAVE results from the home page of this website</figcaption>
+                    </figure>
+                    <p>The first issue that arose in my pages were the contrast issues addressed earlier, including in locations I didn’t even think to check myself using the contrast checker (such as the footer nav), which was very helpful. It then also suggested I have a title on every page, which I didn’t have for three of my pages, I assume this is to make it easier for people to deduce what page they are on (not just relying on the nav bar), and so screen readers can also read out the title.</p>
+                    <p>Of course, all issues that were found through testing have since been fixed. (The reason the link colour is still white is because I made the text bold, this reduces the colour ratio needed to pass the contrast tests)</p>
+                </section>
+            </div>
+        </main>
+
+        <footer>
+            <ul>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="design.html">Design</a></li>
+                <li class="active"><a href="testing.html">Testing</a></li>
+                <li><a href="accessibility.html">Accessibility</a></li>
+                <li><a href="legal_and_security.html">Legal and Security</a></li>
+            </ul>
+            <p>&copy; Luc Smith, 2024</p>
+        </footer>
+    </div>
+</body>
+
+</html>

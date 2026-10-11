@@ -1,0 +1,42 @@
+/*
+This is the CSS file for the testing page.
+This has been developed mobile-first.
+Written by Luc Smith
+*/
+
+
+
+
+
+/* Content elements */
+main figcaption {
+    width: 80%;
+    margin: 0 auto;
+}
+
+main img#mobile {
+    width: 75%;
+}
+
+
+
+
+
+/* Media qureies to scale up the website for desktop usage */
+@media screen and (min-width: 650px) {
+    main img {
+        width: 75%;
+    }
+
+    main img.popup {
+        width: 40%;
+    }
+
+    main img.contrast {
+        width: 60%;
+    }
+
+    main img#mobile {
+        width: 30%;
+    }
+}

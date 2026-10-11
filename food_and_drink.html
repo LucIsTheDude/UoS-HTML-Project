@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>UoSGoodFood</title>
+    <meta name="author" content="Luc Smith">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="images/logo.ico">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/header_pages.css">
+</head>
+
+<body>
+    <div id="wrapper">
+        <header>
+            <img id="logo" src="images/UoSGoodFood.png" alt="UoSGoodFood logo">
+        </header>
+ 
+        <nav>
+            <ul>
+                <li id="home"><a href="index.html">Home</a></li>
+                <li class="active"><a href="food_and_drink.html">Food and Drink</a></li>
+                <li><a href="picnic_locations.html">Picnic Locations</a></li>
+                <li id="quiz"><a href="quiz.html">Quiz</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <h1>Food and Drink</h1>
+            <div id="content">
+                <!-- I have used the 'figure' semantic element for each location 
+                as it means I can wrap all the information into one element, 
+                which allows for easy formatting -->
+                <figure>
+                    <img src="images/wave-kitchen.jpg" alt="Food at the wave kitchen">
+                    <p>Located on the ground floor of The Wave, the Wave Kitchen offers a wide variety of freshly prepared food. From pancakes and pastries at breakfast, to hot sandwiches, loaded nachos and fresh salads at lunch, there's sure to be a little something for everyone.</p>
+                    <h4>Location:</h4>
+                    <!-- These 'iframe' elements are able to be created directly within google map's 
+                    'share' option to allow the embedding of maps directly into the HTML -->
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2379.9049594062412!2d-1.4976077232663043!3d53.38074997229928!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4879832cf62a979f%3A0x9ac8d5fd45b372dc!2sThe%20Wave%20Kitchen!5e0!3m2!1sen!2suk!4v1731177074908!5m2!1sen!2suk" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <!-- Link to the location, opens in a new tab -->
+                    <a href="https://maps.app.goo.gl/biyJYt5DwrBZEtFP7" target="_blank" rel="noopener noreferrer"><b>Link to the Location</b></a>
+                </figure>
+                <figure>
+                    <img src="images/heartspace-cafe.jpg" alt="Food at the heartspace cafe">
+                    <p>Modern meets industrial at the Heartspace Café, featuring great coffee and a range of cakes, cookies and snacks, alongside their range of delicious hot foods prepared daily.</p>
+                    <h4>Location:</h4>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2379.856323116961!2d-1.4815111228198972!3d53.381620172299634!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4879793ab7d54e81%3A0x1a917a4b2136c029!2sHeartspace%20Cafe%20-%20The%20University%20of%20Sheffield!5e0!3m2!1sen!2suk!4v1731177685191!5m2!1sen!2suk" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <a href="https://maps.app.goo.gl/PQodvQ6CkFukZAPj9" target="_blank" rel="noopener noreferrer"><b>Link to the Location</b></a>
+                </figure>
+                <figure>
+                    <img src="images/solly-street-kitchen.jpg" alt="Food at the solly street kitchen">
+                    <p>Try their sizzling chicken in black bean sauce, fresh from the wok with noodles and flavourful vegetables, as well as many other international foods offering everyone a piece of home.</p>
+                    <h4>Location:</h4>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2379.683939882912!2d-1.4758468228197466!3d53.38470437230045!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487979af09cc2f6f%3A0x4b2fff94d6b2fdf1!2sSolly%20Street%20Cafe!5e0!3m2!1sen!2suk!4v1731183853436!5m2!1sen!2suk" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <a href="https://maps.app.goo.gl/aisefiiUc7XXsrM4A" target="_blank" rel="noopener noreferrer"><b>Link to the Location</b></a>
+                </figure>
+                <figure>
+                    <img src="images/grill-and-go.jpg" alt="Food at grill and go">
+                    <p>Situated just inside the Students' Union, come and try their burritos, hot wraps and burrito bowls, cooked fresh and made to order. Their wraps are healthy, customisable and packed full of flavour, perfect for when you are on the go.</p>
+                    <h4>Location:</h4>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1588.400792289916!2d-1.4874227594343166!3d53.380621939555624!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487982780d84fbab%3A0xd646267c51764482!2sGrill%20And%20Go!5e0!3m2!1sen!2suk!4v1731365979725!5m2!1sen!2suk" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <a href="https://maps.app.goo.gl/kHbaqrgpZ5jA2GYu8" target="_blank" rel="noopener noreferrer"><b>Link to the Location</b></a>
+                </figure>
+                <figure>
+                    <img src="images/diamond-kitchen.jpg" alt="Food at the diamond kitchen">
+                    <p>Grab a bite to eat in the Diamond Building - the University's largest investment in teaching. The Diamond Kitchen offers a wonderful array of international flavours with a fantastic grab-and-go offer, complemented by a sleek and stylish design.</p>
+                    <h4>Location:</h4>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9519.615501421102!2d-1.4990574796144862!3d53.38077640520859!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48797932d7f586c9%3A0x1aa82003e5ac6fde!2sThe%20Diamond%20Kitchen!5e0!3m2!1sen!2suk!4v1731369166968!5m2!1sen!2suk" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <a href="https://maps.app.goo.gl/9KN9hEj4914vGK5h7" target="_blank" rel="noopener noreferrer"><b>Link to the Location</b></a>
+                </figure>
+                <figure>
+                    <img src="images/edge-bar.jpg" alt="Food at the edge bar">
+                    <p>The best social hub on campus, The Edge Bar has a range of food and drink to rival all others. There's always something going on here, from weekly quiz nights to live sport and Residence Life events- you'll never be short of a plan for pre drinks!</p>
+                    <h4>Location:</h4>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1190.161741796161!2d-1.506810803737793!3d53.37326133576764!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48798300463bcc05%3A0x5122158d6e63505e!2sThe%20Edge%20Bar!5e0!3m2!1sen!2suk!4v1731369313992!5m2!1sen!2suk" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <a href="https://maps.app.goo.gl/trUNT8jser4XapjE7" target="_blank" rel="noopener noreferrer"><b>Link to the Location</b></a>
+                </figure>
+            </div>
+        </main>
+
+        <footer>
+            <ul>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="design.html">Design</a></li>
+                <li><a href="testing.html">Testing</a></li>
+                <li><a href="accessibility.html">Accessibility</a></li>
+                <li><a href="legal_and_security.html">Legal and Security</a></li>
+            </ul>
+            <p>&copy; Luc Smith, 2024</p>
+        </footer>
+    </div>
+</body>
+
+</html>
